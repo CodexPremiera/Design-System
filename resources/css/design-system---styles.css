@@ -1,0 +1,173 @@
+/* Universal */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7FA;
+}
+
+.id h1, .id h2 {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+}
+
+.id h1 {
+    font-size: 140px;
+    color: #E6E7ED;
+    line-height: 0px;
+    margin-bottom: 90px;
+}
+
+.id h2 {
+    font-size: 32px;
+    color: #E75D77;
+    position: relative;
+    top: -34px;         /* 100(h1 height) *.5(Mid) -32/2(Half self.fontsize) */
+    left: -64px;
+}
+
+
+/* Navigation */
+nav {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 5px 20px  #E6E7ED;     /* Puts shadow below the shape */
+    z-index: 10;
+}
+
+
+
+/* Section Colors */
+.colors {
+    position: relative;
+    width: 1130px;
+    top: 50px;
+    float: right;
+    color: #100d0a;
+}
+
+.palette {
+    background-color: white;
+    float: right;
+    height: 450px;
+    width: 1130px;
+    padding-top: 28px;
+    padding-left: 72px;
+    border-top-left-radius: 72px;
+    border-bottom-left-radius: 72px;
+    margin-bottom: 50px;
+    margin-right: -8px;
+    box-shadow: 40px 40px 100px  #E6E7ED;     /* Puts shadow below the shape */
+    font-family: Montserrat, sans-serif;
+}
+
+.palette h3 {
+    text-transform: uppercase;
+}
+
+.palette .colorbox {
+    height: 160px;
+    padding-left: 20px;          /* 20 - borders of content, parent */
+    margin: 6px 6px 6px 0px;
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+.colorbox table {
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+    font-size: 14px;
+}
+
+.colorbox td {
+    font-size: 11px;
+}
+
+
+.palette .details {
+    width: 450px;
+    display: inline-block;
+    margin: 30px 20px 0 20px;
+    font-size: 16px;
+}
+
+
+.details p {
+    margin-top: -10px;
+    color: #424242;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* Color Boxes */
+
+.main .colorbox.orange {
+    background-color: #e7885d;
+    width: 518px;
+}
+
+.main .colorbox.yellow {
+    background-color: #e7cd5d;
+    width: 270px;
+}
+
+.main .colorbox.pink {
+    color: white;
+    background-color: #e75d77;
+    width: 129px;
+}
+
+
+.grayscale .colorbox {
+    width: 179px;
+}
+
+.grayscale .colorbox.black {
+    color: #f7f7fa;
+    background-color: #100d0a;
+}
+
+.grayscale .colorbox.gray {
+    color: #f7f7fa;
+    background-color: #424242;
+}
+
+.grayscale .colorbox.cloud {
+    background-color: #e6e7ed;
+}
+
+.grayscale .colorbox.smoke {
+    background-color: #f7f7fa;
+    border: 2px solid #e6e7ed;
+}
+
+.grayscale .colorbox.white {
+    background-color: #ffffff;
+    border: 2px solid #e6e7ed;
+}
+
+
+
+
+
+/* Section Fonts */
+section.fonts {
+    position: relative;
+}
+
+
+/* Section Typography */
+section.typography {
+
+}
