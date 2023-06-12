@@ -1,4 +1,4 @@
-/* Universal */
+/* universal */
 * {
     box-sizing: border-box;
 }
@@ -7,28 +7,9 @@ body {
     background-color: #F7F7FA;
 }
 
-.id h1, .id h2 {
-    display: inline-block;
-    font-family: Montserrat, sans-serif;
-}
-
-.id h1 {
-    font-size: 140px;
-    color: #E6E7ED;
-    line-height: 0px;
-    margin-bottom: 90px;
-}
-
-.id h2 {
-    font-size: 32px;
-    color: #E75D77;
-    position: relative;
-    top: -34px;         /* 100(h1 height) *.5(Mid) -32/2(Half self.fontsize) */
-    left: -64px;
-}
 
 
-/* Navigation */
+/* navigation */
 nav {
     background-color: white;
     height: 50px;
@@ -36,22 +17,41 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0px 5px 20px  #E6E7ED;     /* Puts shadow below the shape */
+    box-shadow: 0 5px 20px  #E6E7ED;     /* Puts shadow below the shape */
     z-index: 10;
 }
 
 
-
-/* Section Colors */
-.colors {
+/* section */
+section {
     position: relative;
     width: 1130px;
-    top: 50px;
     float: right;
     color: #100d0a;
 }
 
-.palette {
+section .id {
+    font-family: Montserrat, sans-serif;
+    height: 210px;
+}
+
+section .id>h1 {
+    font-size: 140px;
+    color: #E6E7ED;
+    line-height: 0;
+    display: inline-block;
+}
+
+section .id>h2 {
+    font-size: 32px;
+    color: #E75D77;
+    position: relative;
+    top: -34px;         /* 100(h1 height) *.5(Mid) -32/2(Half self.fontsize) */
+    left: -64px;
+    display: inline-block;
+}
+
+section .group {
     background-color: white;
     float: right;
     height: 450px;
@@ -66,43 +66,26 @@ nav {
     font-family: Montserrat, sans-serif;
 }
 
-.palette h3 {
-    text-transform: uppercase;
-}
-
-.palette .colorbox {
+section .group .box {
     height: 160px;
-    padding-left: 20px;          /* 20 - borders of content, parent */
-    margin: 6px 6px 6px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 6px 6px 6px 0;
     position: static;
     display: inline-block;
-    vertical-align: middle;
-    border-radius: 16px;
+    vertical-align: top;
     font-size: 16px;
+    border-radius: 16px;
 }
 
-.colorbox table {
-    text-align: left;
-    text-transform: uppercase;
-    position: relative;
-    top: 40px;
-    font-size: 14px;
-}
-
-.colorbox td {
-    font-size: 11px;
-}
-
-
-.palette .details {
+section .group .details {
     width: 450px;
     display: inline-block;
     margin: 30px 20px 0 20px;
     font-size: 16px;
 }
 
-
-.details p {
+section .group .details p {
     margin-top: -10px;
     color: #424242;
     font-size: 14px;
@@ -110,49 +93,70 @@ nav {
 }
 
 
-/* Color Boxes */
 
-.main .colorbox.orange {
+/* section.color */
+section.color {
+    top: 50px;
+}
+
+.color .palette h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.color .box table {
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    top: 40px;
+    font-size: 14px;
+}
+
+.color .box td {
+    font-size: 11px;
+}
+
+.color .main .box.orange {
     background-color: #e7885d;
     width: 518px;
 }
 
-.main .colorbox.yellow {
+.color .main .box.yellow {
     background-color: #e7cd5d;
-    width: 270px;
+    width: 264px;
 }
 
-.main .colorbox.pink {
+.color .main .box.pink {
     color: white;
     background-color: #e75d77;
-    width: 129px;
+    width: 135px;
 }
 
 
-.grayscale .colorbox {
+.color .grayscale .box {
     width: 179px;
 }
 
-.grayscale .colorbox.black {
+.color .grayscale .box.black {
     color: #f7f7fa;
     background-color: #100d0a;
 }
 
-.grayscale .colorbox.gray {
+.color .grayscale .box.gray {
     color: #f7f7fa;
     background-color: #424242;
 }
 
-.grayscale .colorbox.cloud {
+.color .grayscale .box.cloud {
     background-color: #e6e7ed;
 }
 
-.grayscale .colorbox.smoke {
+.color .grayscale .box.smoke {
     background-color: #f7f7fa;
     border: 2px solid #e6e7ed;
 }
 
-.grayscale .colorbox.white {
+.color .grayscale .box.white {
     background-color: #ffffff;
     border: 2px solid #e6e7ed;
 }
@@ -161,13 +165,111 @@ nav {
 
 
 
-/* Section Fonts */
-section.fonts {
+/* Section Typography */
+section.typography {
     position: relative;
 }
 
 
-/* Section Typography */
-section.typography {
-
+.typography .font .box {
+    padding-left: 0;
 }
+
+.font .box.typeface {
+    width: 150px;
+}
+
+.box.typeface h2 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 0;
+    margin-top: 48px;
+}
+
+.box.typeface h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 0;
+    margin-top: -5px;
+}
+
+.font .box.headings {
+    width: 210px;
+    height: 320px;
+}
+
+.box.headings h1 {
+    font-size: 28px;
+}
+.box.headings h2 {
+    font-size: 24px;
+}
+.box.headings h3 {
+    font-size: 18px;
+}
+.box.headings h4 {
+    font-size: 16px;
+}
+.box.headings h5 {
+    font-size: 14px;
+}
+.box.headings h6 {
+    font-size: 12px;
+}
+
+
+.font .box.article {
+    width: 550px;
+    height: 320px;
+}
+
+.box.article tr th {
+    line-height: 40px;
+    vertical-align: top;
+}
+
+.box.article th {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: #A7A8B9;
+    padding-right: 32px;
+}
+
+tr.title td h2 {
+    font-size: 40px;
+    color: #e7cd5d;
+    line-height: 0;
+    vertical-align: top;
+}
+
+tr.subtitle td {
+    font-size: 18px;
+    font-weight: 500;
+    color: #e75d77;
+}
+
+tr.paragraph td {
+    margin-top: -10px;
+    color: #424242;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+tr.blockquote td {
+    font-size: 18px;
+    font-weight: 500;
+    color: #100d0a;
+    font-style: italic;
+}
+
+tr.hyperlink td {
+    margin-top: -10px;
+    color: #e75d77;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 20px;
+}
+
