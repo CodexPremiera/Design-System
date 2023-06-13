@@ -6,19 +6,33 @@
     <link rel="stylesheet" href="resources/css/styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
+    <!-- Top Bar -->
+    <header>
+        <h1>THE DESIGN</h1>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="#color">01 - Colors</a></li>
+            <ol>
+                <li><a href="#primary colors">Primary Colors</a></li>
+                <li><a href="#grayscale">Grayscale</a></li>
+            </ol>
+            <li><a href="#typography">02 - Typography</a></li>
+            <ol>
+                <li><a href="#text styling">Text Styling</a></li>
+            </ol>
+        </ul>
     </nav>
 
     <!-- Section Colors -->
-    <section class="color">
+    <section class="color" id="color">
         <div class="id">
             <h1>01</h1>
             <h2>Colors</h2>
         </div>
 
-        <div class="group palette main">
+        <div class="group palette main" id="primary colors">
             <h3>Primary Colors</h3>
             <div class="box orange">
                 <h4>Main</h4>
@@ -67,7 +81,7 @@
             </div>
 
         </div>
-        <div class="group palette grayscale">
+        <div class="group palette grayscale" id="grayscale">
             <h3>Grayscale</h3>
             <div class="box black">
                 <h4>Black Text</h4>
@@ -139,16 +153,14 @@
         </div>
     </section>
 
-
-
     <!-- Section Typography -->
-    <section class="typography">
+    <section class="typography" id="typography">
         <div class="id">
             <h1>02</h1>
             <h2>Typography</h2>
         </div>
 
-        <div class="group font">
+        <div class="group font" id="text styling">
             <h3>Text Styling</h3>
             <div class="box typeface">
                 <h2>Aa</h2>

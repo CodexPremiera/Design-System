@@ -9,8 +9,8 @@ body {
 
 
 
-/* navigation */
-nav {
+/* header */
+header {
     background-color: white;
     height: 50px;
     width: 100%;
@@ -19,13 +19,65 @@ nav {
     left: 0;
     box-shadow: 0 5px 20px  #E6E7ED;     /* Puts shadow below the shape */
     z-index: 10;
+    padding-left: 32px;
 }
 
+header h1 {
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #e7cd5d;
+}
+
+
+/* navigation */
+nav {
+    background-color: transparent;
+    height: 90%;
+    width: 20%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 5;
+    padding-left: 32px;
+}
+
+nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+nav ul li a {
+    color: #424242;
+    text-decoration: none;
+    transition: padding-left 320ms;
+}
+
+nav ul li a:hover {
+    padding-left: 10px;
+    color: #e75d77;
+    transition: padding-left 320ms;
+}
+
+nav ol {
+    list-style-type: none;
+    padding-bottom: 16px;
+}
+
+nav ol li {
+    font-size: 14px;
+}
 
 /* section */
 section {
     position: relative;
-    width: 1130px;
+    width: 75%;
     float: right;
     color: #100d0a;
 }
@@ -37,7 +89,7 @@ section .id {
 
 section .id>h1 {
     font-size: 140px;
-    color: #E6E7ED;
+    color: #e6e7ed;
     line-height: 0;
     display: inline-block;
 }
@@ -54,10 +106,10 @@ section .id>h2 {
 section .group {
     background-color: white;
     float: right;
-    height: 450px;
-    width: 1130px;
+    width: 100%;
     padding-top: 28px;
     padding-left: 72px;
+    padding-bottom: 40px;
     border-top-left-radius: 72px;
     border-bottom-left-radius: 72px;
     margin-bottom: 50px;
